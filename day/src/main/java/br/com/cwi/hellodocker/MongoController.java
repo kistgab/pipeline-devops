@@ -28,7 +28,7 @@ public class MongoController {
 
         if (documento == null) {
             var id = criarDocumentoNoMongo();       
-            return "Foi inserido um registro no banco com id " + id.toString();
+            return "Foi inserido um registro no banco com este id " + id.toString();
         }
                 
         return documento.toJson();
